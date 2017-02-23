@@ -22,6 +22,9 @@ module.exports = {
     sidePanel: (state, data) => {
       return {sidePanel: state.sidePanel === 'hidden' ? '' : 'hidden'}
     },
+    registerPanel: (state, showPanel) => {
+      return {register: showPanel ? '' : 'hidden'}
+    },
     loginPanel: (state, showPanel) => {
       return {login: showPanel ? '' : 'hidden'}
     }
